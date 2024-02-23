@@ -1,0 +1,12 @@
+User Model:
+* Fields:
+    * username (string, required, unique)
+    * email (string, required, unique, validate email format)
+    * password (string, required, hashed) 
+    * roles (array of strings, default: ['user']) 
+    * profile:
+        * firstName (string)
+        * lastName (string)
+        * avatar (string, URL to image)
+* Relationships:
+    * (Consider if the user has a relationship to other models)
